@@ -38,23 +38,18 @@
     focus:text-black
     focus:border-primary/75
     focus:ring-primary/75
-    active:bg-primary/50
-    active:border-primary/50;
   }
 
 	.btn-secondary {
-    @apply bg-transparent
-    text-white
+    @apply bg-ss-blue
+    text-black
     border-black
-    hover:bg-primary/75
     hover:text-black
     hover:border-primary/75
     focus:bg-primary/75
     focus:text-black
     focus:border-primary/75
     focus:ring-primary/75
-    active:bg-primary/50
-    active:border-primary/50;
   }
 
   .btn-block {
