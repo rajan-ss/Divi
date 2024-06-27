@@ -5,3 +5,57 @@
   .btn:hover span{
     transform: translateX(0)
   }
+
+  .category {
+    @apply
+    inline-flex
+    font-medium
+    gap-4
+    items-center
+    text-primary
+    text-xl
+    uppercase
+    italic
+    tracking-wide
+    [&_i]:text-[53px]
+    ;
+  }
+
+  .category.ss-blue {
+    @apply 
+    text-ss-blue
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    @apply
+    hover:bg-primary
+    focus:bg-primary
+    hover:border-transparent
+    focus:border-transparent
+    duration-300
+  }
+  .card-shadow{
+     box-shadow: 0px 4px 18px 0px rgba(0, 40, 86, 0.10);
+  }
+  .swiper-slide{
+    @apply
+    duration-500
+    ease-in-out
+  }
+  .swiper-slide.swiper-slide-active .bg-gray-100.card {
+    background-color: #fff;
+  }
+  .animation{
+    animation: rotate-animation 5s infinite linear;
+  }
+  @keyframes rotate-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

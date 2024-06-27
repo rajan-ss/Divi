@@ -1,4 +1,4 @@
-(function ($) {
+;(function ($) {
   $(document).ready(function () {
     function initBgCover(context) {
       if (!context) context = $('body')
@@ -152,3 +152,31 @@
     })
   })
 })(jQuery)
+
+// Services Section Slider
+var swiper = new Swiper('.services-mySwiper', {
+  slidesPerView: 1,
+  loop: true,
+  // centeredSlides: true,
+  spaceBetween: 30,
+   navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      centeredSlides: false,
+    },
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+})

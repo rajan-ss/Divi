@@ -5,3 +5,11 @@
 .non-cbd-swiper .swiper-button-next{
   @apply after:content-['\e908'];
 }
+
+.services-swiper .swiper-button-prev, .services-swiper .swiper-button-next{
+  @apply relative border border-solid border-ss-blue rounded-full size-10 text-ss-blue after:text-xl p-3 after:font-icomoon after:content-['\e908'];
+}
+
+.services-swiper .swiper-button-next{
+  @apply after:content-['\e909'];
+}
